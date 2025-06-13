@@ -6,7 +6,7 @@ slownik["Indie"] = "Mumbaj"
 assert slownik["Polska"] == "Warszawa"
 # slownik["Francja"]  # KeyError: 'Francja'
 assert slownik.get("Francja") == None
-assert slownik.get("Francja", "wie wiadomo") == "wie wiadomo"
+assert slownik.get("Francja", "nie wiadomo") == "nie wiadomo"
 assert slownik.pop("Indie")  == 'Mumbaj' #  usuwa ze słownika, zwraca 'Mumbaj'
 
 assert "Polska" in slownik  # czy klucz zawiera się w słowniku
