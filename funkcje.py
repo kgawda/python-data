@@ -62,3 +62,17 @@ def powitanie_multilanguage(imie, jezyk="PL"):
 print(powitanie_multilanguage("Konrad"))  # użyta wartość domyślna jezyk, równa "PL"
 print(powitanie_multilanguage("John", "EN"))
 
+def powitanie_multilanguage_wykrzyknik(imie, jezyk="PL", czy_wykrzyknik=True):
+    # if czy_wykrzyknik:
+    #     zakonczenie = "!"
+    # else:
+    #     zakonczenie = "."
+    zakonczenie = "!" if czy_wykrzyknik else "."
+
+    if jezyk == "PL":
+        return f"Witaj {imie}{zakonczenie}"
+    elif jezyk == "EN":
+        return f"Hello {imie}{zakonczenie}"
+
+# Podanie argumentu nazwanego (ang. keyword - "kluczowy")
+print(powitanie_multilanguage_wykrzyknik("Konrad", czy_wykrzyknik=False))
